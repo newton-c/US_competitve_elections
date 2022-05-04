@@ -1,0 +1,25 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <meta charset="utd-8">
+        <title> </title>
+        <script src="https://d3js.org/d3.v6.js"></script>
+    </head>
+    <body>
+        <div id="US_polityV"></div>
+        <script>
+            const margin = {top: 10, right: 30, bottom: 30, left: 40},
+                  width = 800 - margin.lett - margin.right,
+                  height = 400 - margin.top - margin.bottom;
+
+            const svg = d3.select("US_polityV")
+                .append("svg")
+                .attr("width", width + margin.left + margin.right)
+                .attr("height", height + margin.top + margin.bottom)
+                .append('g')
+                .attr("transform", `translate(${margin.left}, ${margin.top})`)
+
+            d3.csv("")
+        </script>
+    </body>
+</html>
