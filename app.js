@@ -73,10 +73,9 @@ const svg2 = d3.select("#polcomp")
       .attr("stroke", "blue")
       .attr("stroke-width", 1.5)
       .attr("d", d3.line()
-          //.defined(function(d) { return d.polcomp != null; })
+          .defined(function(d) { return d.polcomp != 0; })
           .x(function(d) { return x(d.year) })
           .y(function(d) { return y(d.polcomp) })
         )
-            console.log(data);
         });
 
